@@ -24,7 +24,7 @@
 					$query = "INSERT INTO users (fName, Email, password) VALUES ('$fullname', '$email', '$password')";
 				$result = mysqli_query($conn, $query);
 				if ($result) {
-					header("Refresh:0; url=index.php");
+					header("Refresh:0; url=../index.php");
 					echo "<script>alert('Registration Successful, Click Ok to Login')</script>";
 				}else{
 					header("Refresh:0; url=register.php");

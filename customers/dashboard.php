@@ -51,7 +51,7 @@
 </head>
 <nav class="black z-depth-0 nav-bar">
 		<div class="container">
-			<a href="../views/index.php" class="brand-logo brand-text hide-on-med-and-down">Pizzahouse</a>
+			<a href="../index.php" class="brand-logo brand-text hide-on-med-and-down">Pizzahouse</a>
 			<ul id="nav-mobile" class="right">
 
 				<li><a href="../logout.php" class="btn brand z-depth-0">log-out</a></li>

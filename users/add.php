@@ -62,7 +62,7 @@ $errors = array('email' =>'' , 'title' => '',     'ingredients' => '' );
           if(mysqli_query($conn, $sql)){
             //sucess
             
-            header("Refresh:0; url=../views/index.php");
+            header("Refresh:0; url=../index.php");
               echo "<script>alert('Order Received, Thank you!')</script>";
           }else{
 

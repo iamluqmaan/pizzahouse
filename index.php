@@ -1,14 +1,25 @@
 <?php
-include('../database/db_connect.php');
-include('../sharables/header.php');
+include('database/db_connect.php');
+include('sharables/header.php');
 ?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="../public/style.css">
+<link rel="stylesheet" href="public/bootstrap.css">
+	
+	<link rel="stylesheet" href="public/style.css">
 	<style>
+		.bg{
+			background:url('images/R.jpg');
+			background-repeat: no-repeat;
+			background-size:cover;
+			position: relative;
+			min-height:100%;
+			max-width:100%;
+			opacity:.9;
+		}
 		.nav-bar{
 			border-bottom:1px solid lightgray;
 			/* opacity:.3; */
@@ -84,11 +95,11 @@ include('../sharables/header.php');
 
 <nav class="black z-depth-0 nav-bar">
 		<div class="container">
-			<a href="../views/index.php" class="brand-logo brand-text hide-on-med-and-down">Pizzahouse</a>
+			<a href="./index.php" class="brand-logo brand-text hide-on-med-and-down">Pizzahouse</a>
 			<ul id="nav-mobile" class="right">
 
-			<li><a href="../customers/register.php" class="btn brand z-depth-0">join the VIP</a></li>	
-			<li><a href="../auth/login.php" class="btn brand z-depth-0">login</a></li>
+			<li><a href="./customers/register.php" class="btn brand z-depth-0">join the VIP</a></li>	
+			<li><a href="./auth/login.php" class="btn brand z-depth-0">login</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -97,9 +108,9 @@ include('../sharables/header.php');
 	<div class="col-12 container mt-3">
 		<div class="row shadow">
 			<div class=" rounded-3 display col-lg-6 col-md-6 col-sm-12 ">
-				<a href="../users/add.php"><img class ="homepage p-1" src="../images/homepage.jpg" alt="pizza image" 
+				<a href="./users/add.php"><img class ="homepage p-1" src="./images/homepage.jpg" alt="pizza image" 
 				title="order now!"></a>
-				<img src="../images/base.jpg" class="col-12 base" alt="">
+				<img src="./images/base.jpg" class="col-12 base" alt="">
 				
 			</div>
 			
@@ -113,7 +124,7 @@ include('../sharables/header.php');
 						</div>
 		
 						<div class="col-12" id="gif">
-						<img src="../images/34xu.gif" class="gif" alt="">
+						<img src="./images/34xu.gif" class="gif" alt="">
 						</div>
 					</div>
 				</div>
@@ -124,7 +135,7 @@ include('../sharables/header.php');
 		</div>
 	</div>
 	</section>
-<?php include('../sharables/footer.php'); ?>
+<?php include('./sharables/footer.php'); ?>
 	</body>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
